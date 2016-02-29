@@ -158,10 +158,6 @@ class fuel_project::common (
   }
   # /Zabbix SSL item
 
-  mount { '/' :
-    ensure  => 'present',
-    options => 'defaults,errors=remount-ro,noatime,nodiratime,barrier=0',
-  }
 
   file { '/etc/hostname' :
     ensure  => 'present',
